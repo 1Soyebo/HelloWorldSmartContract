@@ -28,4 +28,10 @@ contract HelloWorld {
       message = newMessage;
       emit UpdatedMessages(oldMsg, newMessage);
    }
+
+   function downdate(string memory newMessage) public {
+      string memory oldMsg = message;
+      message = newMessage;
+      emit UpdatedMessages(oldMsg, newMessage);
+   }
 }
